@@ -71,7 +71,7 @@ export default function Home() {
 
           <div className='w-full flex justify-center lg:justify-start lg:m-3 mt-3'>
               <div className='w-3/4  text-center lg:text-left text-white p-3 rounded-lg text-sm lg:text-xl animate__animated animate__fadeIn '>
-              In my country it isn't common to study this kind of subjects like coding or computer science, so i had to study and investigate it on my own.
+              In my country it isnt common to study this kind of subjects like coding or computer science, so i had to study and investigate it on my own.
               </div>
               
           </div>
