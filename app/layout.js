@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-sync-scripts */
+import { Analytics } from '@vercel/analytics/react';
 import './globals.css'
 import { Inter, Amatic_SC, Syne} from 'next/font/google'
 import SideNavBar from './components/SideNavBar'
@@ -37,6 +38,7 @@ export default function RootLayout({ children }) {
         
        
         <script src="node_modules/keen-slider/keen-slider.js"></script>
+        <Analytics />
         </body>
     </html>
   )
