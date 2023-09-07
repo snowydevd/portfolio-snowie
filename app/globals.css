@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* width */
+::-webkit-scrollbar {
+  
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background: #2e3363; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+*{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #000000;
+}
+
+.montserrat{
+  font-family: 'Montserrat', sans-serif;
+
+}
+/* 
+.section-bg{
+  background-image: url('../public/sectionbg.svg');
+
+  background-size: cover;
+  background-repeat: repeat-x;
+} */
+
+.about-bg{
+  background-image: url('../public/aboutblur.svg');
+ 
+  background-repeat: no-repeat;
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
