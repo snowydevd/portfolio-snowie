@@ -1,6 +1,7 @@
 import React from 'react'
 import 'animate.css';
 
+import { GiGraduateCap } from "react-icons/gi";
 
 import { BsFillBriefcaseFill, BsHouseDoorFill, BsFillInfoSquareFill, BsStack, BsFillTelephoneFill } from "react-icons/bs";
 
@@ -16,6 +17,8 @@ export default function SideNavBar() {
 
             <li className='hover:text-slate-300 duration-150 flex flex-row lg:hover:bg-slate-950 lg:rounded-lg lg:p-3 lg:transition lg:ease-out lg:hover:-translate-y-1'> <BsFillInfoSquareFill className='m-1 hidden lg:block'/> <a href="#about" ><BsFillInfoSquareFill className='m-1 block lg:hidden text-2xl'/> <span className='hidden lg:block tracking-wider'>About me</span></a></li>
 
+            <li className='hover:text-slate-300 duration-150 flex flex-row lg:hover:bg-slate-950 lg:rounded-lg lg:p-3 lg:transition lg:ease-out lg:hover:-translate-y-1'> <GiGraduateCap className='m-1 hidden lg:block text-2xl'/> <a href="#knowledge" ><GiGraduateCap className='m-1 block lg:hidden text-3xl'/> <span className='hidden lg:block tracking-wider'>Knowledge</span></a></li>
+ 
             <li className='hover:text-slate-300 duration-150 flex flex-row lg:hover:bg-slate-950 lg:rounded-lg lg:p-3 lg:transition lg:ease-out lg:hover:-translate-y-1'> <BsStack className='m-1 hidden lg:block'/> <a href="#projects" ><BsStack className='m-1 block lg:hidden text-2xl'/> <span className='hidden lg:block tracking-wider'>Projects</span></a></li>
 
             <li className='hover:text-slate-300 duration-150 flex flex-row lg:hover:bg-slate-950 lg:rounded-lg lg:p-3 lg:transition lg:ease-out lg:hover:-translate-y-1'> <BsFillTelephoneFill className='m-1 hidden lg:block'/> <a href="#contact" ><BsFillTelephoneFill className='m-1 block lg:hidden text-2xl'/> <span className='hidden lg:block tracking-wider'>Contact</span></a></li>

@@ -14,17 +14,99 @@ import simpleShotPhone from '../public/simpleShotPhone.png'
 
 import ContactForm from './components/ContactForm'
 
-import {BsGithub, BsInstagram} from 'react-icons/bs'
+import {BsGithub, BsInstagram, BsLinkedin} from 'react-icons/bs'
 
+import cppIcon from '../public/cppIcon.png'
+import csIcon from '../public/csIcon.png'
+import cssIcon from '../public/cssIcon.webp'
+import htmlIcon from '../public/htmlIcon.png'
+import javaIcon from '../public/javaIcon.webp'
+import JavascriptIcon from '../public/JavascriptIcon.webp'
+import mysqlIcon from '../public/mysqlIcon.png'
+import pythonIcon from '../public/pythonIcon.svg'
+
+import reactIcon from '../public/reactIcon.png'
+import djangoIcon from '../public/DjangoIcon.png'
+import nextIcon from '../public/nextIcon.png'
+
+import tailwindIcon from '../public/tailwindIcon.png'
 
 
 export default function Home() {
+
+  const tech = [
+    {
+      id:'1',
+      label: 'c++',
+      image: cppIcon
+    },
+    {
+      id:'2',
+      label: 'C#',
+      image: csIcon
+    },
+    {
+      id:'3',
+      label: 'CSS3',
+      image: cssIcon
+    },
+    {
+      id:'4',
+      label: 'HTML5',
+      image: htmlIcon
+    },
+    {
+      id:'5',
+      label: 'Javascript',
+      image: JavascriptIcon
+    },
+    {
+      id:'6',
+      label: 'MySQL',
+      image: mysqlIcon
+    },
+    
+    {
+      id:'7',
+      label: 'Java',
+      image: javaIcon
+    },
+    {
+      id:'8',
+      label: 'Python',
+      image: pythonIcon
+    },
+  ]
+
+  const frameworks = [
+    {
+      id:'1',
+      label: 'React',
+      image: reactIcon
+    },
+    {
+      id:'2',
+      label: 'Django',
+      image: djangoIcon
+    },
+    {
+      id:'3',
+      label: 'Next.js',
+      image: nextIcon
+    },
+    {
+      id:'3',
+      label: 'Tailwind CSS',
+      image: tailwindIcon
+    },
+    
+  ]
   
   return (
     
     <main className="w-full flex flex-col  items-center mt-40">
 
-    
+    {/* LANDING */}
       <section id='home' className='w-full lg:w-4/6 h-[80vh]'>
 
         <article className='flex lg:flex-row flex-col justify-center lg:justify-between w-full items-center '>
@@ -37,8 +119,9 @@ export default function Home() {
               <h1 className='text-5xl lg:text-8xl text-white animate__animated animate__fadeInDown animate__delay-500ms amatic'><strong>Lautaro Chini</strong><span className='text-4xl text-blue-600'>.</span></h1>
               <h2 className='text-3xl lg:text-5xl font-extrabold text-white animate__animated animate__fadeInDown animate__delay-800ms'>Web Developer</h2>
               <div className='flex flex-row gap-3 text-white text-3xl lg:justify-start justify-center'>
+                <a href="https://www.linkedin.com/in/lautaro-chini-108181289/" target='_blank' className='duration-150 hover:text-blue-600'><BsLinkedin/></a>
                 <a href="https://github.com/snowydevd" target='_blank' className='duration-150 hover:text-slate-800'><BsGithub/></a>
-                <a href="https://www.instagram.com/chini17__/?hl=es" target='_blank' className='duration-150 hover:text-orange-900'><BsInstagram/></a>
+                <a href="https://www.instagram.com/chini17__/?hl=es" target='_blank' className='duration-150 hover:text-orange-500'><BsInstagram/></a>
               </div>
 
             </div>
@@ -54,6 +137,9 @@ export default function Home() {
         
       </section>
 
+
+
+  {/* ABOUT ME */}
       <section id='about' className='w-5/6 lg:w-4/6 h-[70vh] flex justify-center items-center flex-col mt-24 mb-32 about-bg'>
         <div className='w-full text-center'>
           <h1 className='text-7xl lg:text-9xl font-extrabold  text-white animate__animated animate__fadeInDown animate__delay-200ms'>About me</h1>
@@ -95,7 +181,48 @@ export default function Home() {
           
       </section>
 
+      {/* TERMINAR */}
 
+    {/* KNOWLEDGE */}
+      <section id='knowledge' className='w-5/6 lg:w-4/6 h-[70vh] flex justify-center items-center flex-col mt-24 mb-32 about-bg'>
+        <div className='w-full text-center'>
+          <h2 className='text-7xl lg:text-9xl font-extrabold  text-white animate__animated animate__fadeInDown animate__delay-200ms'>Knowledge</h2>
+        </div>
+
+        <article className='flex flex-col flex-wrap w-full lg:w-3/4 p-3 mt-7 lg:mt-16 justify-center items-center'>
+          <h3 className='text-3xl lg:text-5xl font-extrabold  text-white animate__animated animate__fadeInDown animate__delay-200ms'>Technologies</h3>
+          <div className='flex-row flex flex-wrap justify-center items-center mb-16'>
+              {tech.map((items) => {
+              return(
+                <div key={items.id} className='p-3'>
+                  <Image alt={items.label} src={items.image} width={75}/>
+                </div>
+              )
+            })}
+          </div>
+
+          <h3 className='text-3xl lg:text-5xl font-extrabold  text-white animate__animated animate__fadeInDown animate__delay-200ms text-center'>Frameworks and Tools</h3>
+          <div className='flex-row flex flex-wrap justify-center items-center'>
+              {frameworks.map((items) => {
+              return(
+                <div key={items.id} className='p-3'>
+                  <Image alt={items.label} src={items.image} width={75}/>
+                </div>
+              )
+            })}
+          </div>
+        
+
+
+         
+        </article>
+          
+      </section>
+
+
+
+
+      {/* PROJECTS */}
       <section id='projects' className='w-5/6 lg:w-full h-[150vh] flex justify-center items-center flex-col mt-32'>
         <div className='w-full text-center'>
           <h1 className='text-7xl lg:text-9xl font-extrabold  text-white animate__animated animate__fadeInDown animate__delay-500ms'>Projects</h1>
@@ -164,6 +291,8 @@ export default function Home() {
 
           
       </section>
+
+{/* CONTACT */}
 
 
       <section id='contact' className='w-full lg:w-4/6 flex justify-center items-center flex-col mt-32'>
