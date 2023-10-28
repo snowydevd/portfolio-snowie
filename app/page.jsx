@@ -211,10 +211,6 @@ export default function Home() {
               )
             })}
           </div>
-        
-
-
-         
         </article>
           
       </section>
